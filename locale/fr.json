@@ -33,5 +33,6 @@
     "nameUse": "Nom déjà utilisé",
     "nameAvailable": "Nom disponible",
     "edit": "Modifier",
-    "editArticle": "Changement de l'article"
+    "editArticle": "Changement de l'article",
+    "language": "Langage"
 }

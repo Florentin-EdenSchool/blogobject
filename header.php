@@ -14,7 +14,6 @@
   include('load.php');
   $config = new ManagerConfig();
   session_start();
-
   echo '<link rel="icon" type="image/png" href="' . $config->getPath("image") . 'favicon.png" />';
 
   if (!isset($_SESSION["lang"])) {
@@ -71,8 +70,17 @@
           echo '<a class="nav-item nav-link" href="disconnect.php">' . $lang->getContent("disconnect") . '</a>';
         }
         ?>
-        <a class="nav-item nav-link" id="fr">🇫🇷</a>
-        <a class="nav-item nav-link" id="en">🇬🇧</a>
+        <div class="dropdown">
+          <?php
+          echo '<div class="dropdown-toggle nav-item nav-link" type="button" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">' . $lang->getContent("language");
+          ?>
+          <span class="caret"></span>
+        </div>
+        <ul class="dropdown-menu" aria-labelledby="dropdown">
+          <li><a id="fr" class="language">🇫🇷</a></li>
+          <li><a id="en" class="language">🇬🇧</a></li>
+        </ul>
       </div>
+    </div>
     </div>
   </nav>

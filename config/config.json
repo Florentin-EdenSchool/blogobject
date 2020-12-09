@@ -1,0 +1,11 @@
+{
+    "bdd": {
+        "db": "blog",
+        "username": "root",
+        "password": "",
+        "host": "127.0.0.1"
+    },
+    "path": {
+        "image": "./images/"
+    }
+}
